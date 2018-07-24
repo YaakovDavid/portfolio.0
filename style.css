@@ -1,0 +1,115 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  margin: 0;
+}
+
+body{
+  margin: 0 20px;
+  display: grid;
+  height: 100%;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 60px;
+  grid-template-areas:
+    "i b b b b b"
+    "p p p p p p"
+    "s s s s s s"
+    "c c c c c c";
+}
+
+.image-of-me{
+  grid-area: i;
+
+  border-radius: 50%;
+  margin: 35px 0 15px 15px;
+  height: 300px;
+  width: 300px;
+  border: 2px solid #7DCFB6;
+}
+
+.brand-statment{
+  grid-area: b;
+
+  font-size: 20px;
+  font-weight: 500;
+  text-align: justify;
+  margin: 100px 30px 0px 30px;;
+  margin-right: 50px;
+  color: #7DCFB6;
+  font-family: 'Lora', serif;
+}
+
+.projects{
+  grid-area: p;
+
+  display: flex;
+}
+
+.contact{
+  grid-area: c;
+
+  /* background-color: green; */
+  display: flex;
+  max-width: 200px;
+  margin: 0 auto;
+}
+
+.skills{
+  grid-area: s;
+
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.prject-a-tag{
+  flex-direction: row;
+  margin: 50px auto;
+  text-decoration: none;
+  text-align: center;
+  height: 300px;
+  width: 300px;
+  padding: 20px;
+  /* background-color: yellow; */
+  /* border: 2px solid red; */
+  color: red;
+  background-color: #00B2CA;
+  color: white;
+  border-radius: 55px;
+}
+/* a{
+  background-color: red;
+} */
+.prject-a-tag:hover{
+  /* height: 260px;
+  width: 260px; */
+  /* margin: 60px; */
+background-color: #7DCFB6;
+}
+
+.img{
+  height: 250px;
+  width: 250px;
+
+
+  /* margin-right: 20px; */
+  /* margin-left: 20px; */
+}
+
+.contact-a-tag{
+  /* background-color: red; */
+  flex-direction: row;
+  margin: 0 auto;
+}
+
+.contact-img{
+  width: 100px;
+  height: 100px;
+}
+
+.skill-img{
+  width: 150px;
+  height: 100px;
+  /* border: 2px solid red; */
+  flex-wrap: wrap;
+  /* flex-direction: row; */
+  margin: 30px;
+}
