@@ -1,115 +1,166 @@
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
+/* ___________here_starts_the_grid______________ */
 body{
-  margin: 0 20px;
   display: grid;
   height: 100%;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 60px;
+  /* grid-template-rows: 1fr 1fr 1fr 1fr 1fr 60px; */
   grid-template-areas:
-    "i b b b b b"
+    "h h h h h h"
+    "a a a a a a"
     "p p p p p p"
     "s s s s s s"
     "c c c c c c";
 }
 
-.image-of-me{
-  grid-area: i;
+.header{
+  grid-area: h;
 
-  border-radius: 50%;
-  margin: 35px 0 15px 15px;
-  height: 300px;
-  width: 300px;
-  border: 2px solid #7DCFB6;
+  background-image: url("images/background.png");
+  background-size: cover;
+  height: 100vh;
 }
 
-.brand-statment{
-  grid-area: b;
+.about{
+  grid-area: a;
 
-  font-size: 20px;
-  font-weight: 500;
-  text-align: justify;
-  margin: 100px 30px 0px 30px;;
-  margin-right: 50px;
-  color: #7DCFB6;
-  font-family: 'Lora', serif;
+  height: 100vh;
+  margin: 50px 0 0 50px;
+  display: flex;
 }
 
 .projects{
   grid-area: p;
 
-  display: flex;
-}
-
-.contact{
-  grid-area: c;
-
-  /* background-color: green; */
-  display: flex;
-  max-width: 200px;
-  margin: 0 auto;
-}
+  height: 100vh;
+ }
 
 .skills{
   grid-area: s;
 
-  max-width: 1100px;
-  margin: 0 auto;
+  background-color: black;
+  height: 100vh;
+  display: flex;
 }
 
-.prject-a-tag{
-  flex-direction: row;
-  margin: 50px auto;
-  text-decoration: none;
-  text-align: center;
-  height: 300px;
-  width: 300px;
-  padding: 20px;
-  /* background-color: yellow; */
-  /* border: 2px solid red; */
-  color: red;
-  background-color: #00B2CA;
+/* ___________here_starts_home_page______________ */
+.initials{
+  font-family: 'Condiment', cursive;
+  font-size: 25px;
+  margin: 15px 15px 15px 35px;
+  border: 2px solid white;
+  display: inline-block;
+  padding-right: 5px;
+  padding-top: 5px;
+  border-radius: 50%;
   color: white;
-  border-radius: 55px;
-}
-/* a{
-  background-color: red;
-} */
-.prject-a-tag:hover{
-  /* height: 260px;
-  width: 260px; */
-  /* margin: 60px; */
-background-color: #7DCFB6;
 }
 
-.img{
-  height: 250px;
-  width: 250px;
-
-
-  /* margin-right: 20px; */
-  /* margin-left: 20px; */
+nav{
+  background: rgba(0,0,0,0.8);
+  height: 80px;
+  width: 100%;
+  position: fixed;
 }
 
-.contact-a-tag{
-  /* background-color: red; */
+.nav-links{
+  text-decoration: none;
+  color: white;
+  margin: 40px 30px;
+  padding: 8px 5px;
+}
+
+.nav-links:hover{
+  color: black;
+  background-color: white;
+  padding: 8px 5px;
+  border-radius: 15px;
+}
+
+/* ___________here_starts_about_page______________ */
+.name{
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 70px;
+  text-align: center;
+  margin-top: 200px;
+}
+
+.title{
+  text-align: center;
+  color: white;
+  font-family: 'Old Standard TT', serif;
+  font-size: 30px;
+}
+
+.image-of-me{
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  border: 2px solid #7DCFB6;
+  margin-top: 100px;
+  margin-right: 50px;
   flex-direction: row;
-  margin: 0 auto;
 }
 
-.contact-img{
-  width: 100px;
-  height: 100px;
+.brand-statment{
+  font-size: 20px;
+  font-weight: 500;
+  text-align: justify;
+  color: #7DCFB6;
+  font-family: 'Lora', serif;
+  max-width: 900px;
+  display: inline-block;
+  text-align: center;
+  flex-direction: row;
+  margin-top: 100px;
+}
+
+/* ___________here_starts_project_page______________ */
+.project-img{
+  height: 150px;
+  width: 150px;
+ }
+
+.project-box{
+  margin: 20px;
+}
+
+#move-down{
+  margin-top: 100px;
+}
+
+/* ___________here_starts_skills_page______________ */
+.skills-box{
+  margin: 0 auto;
+  margin-top: 100px;
 }
 
 .skill-img{
-  width: 150px;
   height: 100px;
-  /* border: 2px solid red; */
-  flex-wrap: wrap;
-  /* flex-direction: row; */
-  margin: 30px;
+  width: 100px;
+  margin: 50px 50px;
+  border-radius: 15px;
 }
+
+/* ___________here_starts_skills_page______________ */
+.contact{
+  grid-area: c;
+
+  background-color: red;
+  height: 100vh;
+}
+
+.contact-img{
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  border-radius: 15px;
+  margin-top: 100px;
+ }
