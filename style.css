@@ -10,7 +10,6 @@ body{
   display: grid;
   height: 100%;
   grid-template-columns: repeat(6, 1fr);
-  /* grid-template-rows: 1fr 1fr 1fr 1fr 1fr 60px; */
   grid-template-areas:
     "h h h h h h"
     "b b b b b b"
@@ -53,7 +52,6 @@ body{
   grid-area: s;
 
   height: 80vh;
-  /* display: flex; */
   margin-bottom: 40px;
   max-width: 900px;
   margin: 0 auto;
@@ -206,16 +204,29 @@ nav{
 }
 
 /* ___________here_starts_contact_page______________ */
-.contact-img{
+.contact-img, form{
   height: 50px;
   width: 50px;
-  background-color: white;
-  border-radius: 15px;
-  margin: 50px 10px;
+  border-radius: 55px;
+  display: inline-block;
+  margin: 10px 5px 10px 15px;
  }
 
- .footer{
-   color: white;
+ button, form{
+  background: none;
+  border: none;
+  margin: none;
+  padding: none;
+  border: none;
+  position: relative;
+  right: 10px;
  }
+
+ button:focus {
+   outline:0;
+}
+ /* .footer{
+  color: white;
+ } */
 
 
