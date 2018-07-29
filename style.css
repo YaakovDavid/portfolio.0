@@ -38,20 +38,20 @@ body{
 .projects{
   grid-area: p;
 
-  height: 150vh;
+  height: 145vh;
  }
 
 .about{
   grid-area: a;
 
-  height: 50vh;
+  height: 70vh;
   display: flex;
 }
 
 .skills{
   grid-area: s;
 
-  height: 80vh;
+  height: 70vh;
   margin-bottom: 40px;
   max-width: 900px;
   margin: 0 auto;
@@ -159,7 +159,7 @@ nav{
 /* ___________here_starts_about_page______________ */
 .about-flex{
   display: flex;
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
 }
 
 .image-of-me{
@@ -174,9 +174,10 @@ nav{
 
 .about-statment{
   max-width: 1100px;
-  margin: 150px 40px 0px;
-  font-size: 18px;
-  font-weight: 500;
+  margin: 150px 40px 0px ;
+  font-size: 22px;
+  font-weight: 200;
+  line-height: 28px;
   text-align: center;
   text-transform: uppercase;
   font-family: 'Lora', serif;
@@ -225,8 +226,119 @@ nav{
  button:focus {
    outline:0;
 }
- /* .footer{
+ .footer{
   color: white;
- } */
+  margin: 20px;
+  float: right;
+ }
 
 
+
+
+
+
+
+@media only screen and (max-width: 780px) {
+.about-statment{
+  margin: 140px 20px 0px;
+  font-size: 20px;
+  line-height: 22px;
+}
+}
+
+
+
+/* ___________here_starts_mobile_responsive______________ */
+@media only screen and (max-width: 710px) {
+.header{
+  height: 60vh;
+}
+
+.brand{
+  height: 20vh;
+}
+
+.projects{
+  height: 260vh;
+ }
+
+.about{
+  height: 80vh;
+}
+
+.skills{
+  height: 90vh;
+}
+
+
+/* ___________here_starts_home_page______________ */
+.initials{
+  float: right;
+  position: relative;
+  top: 20px;
+}
+
+nav{
+  height: 120px;
+}
+
+.nav-links{
+  position: relative;
+  top: 30px;
+  line-height: 35px;
+}
+
+.name{
+  font-size: 60px;
+}
+
+/* ___________here_starts_brand_section______________ */
+.brand-statment{
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 25px;
+}
+
+/* ___________here_starts_project_page______________ */
+.project-img{
+  height: 250px;
+  width: 100%;
+ }
+
+.project-box{
+  max-width: 400px;
+  height: 250px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 250px;
+}
+
+#move-down{
+  margin-top: 150px;
+}
+
+/* ___________here_starts_about_page______________ */
+.about-flex{
+  display: block;
+  margin: 100px 20px 0px;
+}
+
+.image-of-me{
+  height: 200px;
+  width: 200px;
+  border-radius: 30%;
+  border: 4px solid #7DCFB6;
+  margin: 100px 0 10px 70px;
+}
+
+.about-statment{
+  margin: 10px 20px 0px;
+  font-size: 15px;
+  line-height: 22px;
+}
+
+/* ___________here_starts_skills_page______________ */
+.skills-box{
+  margin-top: 150px;
+}
+}
