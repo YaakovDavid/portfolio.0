@@ -38,13 +38,13 @@ body{
 .projects{
   grid-area: p;
 
-  height: 145vh;
+  height: 140vh;
  }
 
 .about{
   grid-area: a;
 
-  height: 70vh;
+  height: 60vh;
   display: flex;
 }
 
@@ -238,17 +238,18 @@ nav{
 
 
 
-@media only screen and (max-width: 780px) {
-.about-statment{
-  margin: 140px 20px 0px;
-  font-size: 20px;
-  line-height: 22px;
-}
-}
 
 
 
 /* ___________here_starts_mobile_responsive______________ */
+@media only screen and (max-width: 800px) {
+.about-statment{
+  margin: 140px 20px 0px;
+  font-size: 20px;
+  line-height: 25px;
+}
+}
+
 @media only screen and (max-width: 710px) {
 .header{
   height: 60vh;
