@@ -44,14 +44,14 @@ body{
 .about{
   grid-area: a;
 
-  height: 65vh;
+  height: 60vh;
   display: flex;
 }
 
 .skills{
   grid-area: s;
 
-  height: 70vh;
+  height: 65vh;
   margin-bottom: 40px;
   max-width: 900px;
   margin: 0 auto;
@@ -91,16 +91,20 @@ nav{
   padding: 8px 5px;
 }
 
-/* active a {
-  color: #FDFFFC;
-} */
-
 .nav-links:hover{
   color: black;
   background-color: white;
   padding: 8px 5px;
   border-radius: 15px;
 }
+/* , .nav-links.current */
+/* , .nav-links:selected */
+/* .nav-links:active{
+  color: red
+} */
+/* a.current{
+  background-color: white;
+} */
 
 .name{
   color: white;
@@ -178,6 +182,12 @@ a{
   margin-top: 100px;
 }
 
+.github-icon{
+  height: 50px;
+  width: 50px;
+  margin: 20px 0px;
+}
+
 /* ___________here_starts_about_page______________ */
 .about-flex{
   display: flex;
@@ -222,13 +232,13 @@ a{
 
 /* ___________here_starts_skills_page______________ */
 .skills-box{
-  margin-top: 100px;
+  /* margin-top: 100px; */
 }
 
 .skill-img{
   height: 100px;
   width: 100px;
-  margin: 10px 10px;
+  margin: 30px 10px;
   border-radius: 15px;
   border: 2px solid rgb(216, 95, 132);
 }
@@ -289,7 +299,7 @@ a{
 }
 
 .projects{
-  height: 260vh;
+  height: 300vh;
  }
 
 .about{
@@ -297,7 +307,7 @@ a{
 }
 
 .skills{
-  height: 90vh;
+  height: 80vh;
 }
 
 
@@ -337,7 +347,7 @@ nav{
 
 .project-box{
   max-width: 400px;
-  height: 250px;
+  height: 320px;
   display: block;
   margin: 0 auto;
   margin-top: 250px;
@@ -370,5 +380,107 @@ nav{
 /* ___________here_starts_skills_page______________ */
 .skills-box{
   margin-top: 150px;
+}
+
+.skill-img{
+  margin: 10px 10px;
+  height: 80px;
+  width: 80px;
+}
+}
+
+
+
+@media only screen and (max-width: 430px) {
+.brand{
+  height: 35vh;
+}
+.projects{
+  height: 200vh;
+}
+
+project-title{
+  font-size: 20px;
+  font-weight: 700;
+  display: block;
+  text-align: center;
+  margin: 0px 0 10px;
+}
+
+a{
+  text-decoration: none;
+}
+
+.project-img{
+  height: 200px;
+  width: 250px;
+  border-radius: 15px;
+  border: solid 2px rgb(85, 231, 250);
+  margin-right: 10px;
+ }
+
+.project-discription{
+  text-align: center;
+  color: rgb(197, 88, 148);
+  /* padding: 20px; */
+  margin-left: 10px;
+  font-size: 20px; /*+*/
+  font-weight: 400; /*+*/
+  line-height: 23px; /*+*/
+}
+.project-box{
+  width: 700px;
+  height: 400px; /*+*/
+  display: flex;
+  margin: 0 auto;
+}
+
+#move-down{
+  margin-top: 100px;
+}
+
+/* .github-icon{
+  height: 50px;
+  width: 50px;
+  margin: 20px 0px;
+} */
+
+
+.skills-box{
+  margin-top: 150px;
+}
+
+.skill-img{
+  height: 70px;
+  width: 70px;
+  margin: 10px 20px;
+}
+}
+
+@media only screen and (max-width: 381px) {
+.skills{
+  height: 120vh;
+}
+
+.skills-box{
+  margin-top: 150px;
+}
+
+.skill-img{
+  height: 90px;
+  width: 90px;
+  margin: 10px 40px;
+}
+}
+
+@media only screen and (max-width: 355px) {
+.skill-img{
+  height: 90px;
+  width: 90px;
+  margin: 10px 20px;
+  /* float: right; */
+}
+.skills-box{
+  margin-left: 40px;
 }
 }
