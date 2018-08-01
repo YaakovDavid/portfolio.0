@@ -30,7 +30,7 @@ body{
 .brand{
   grid-area: b;
 
-  height: 30vh;
+  height: 25vh;
   margin: 0 auto;
   margin-bottom: 100px;
 }
@@ -38,13 +38,13 @@ body{
 .projects{
   grid-area: p;
 
-  height: 140vh;
+  height: 160vh;
  }
 
 .about{
   grid-area: a;
 
-  height: 60vh;
+  height: 65vh;
   display: flex;
 }
 
@@ -91,6 +91,10 @@ nav{
   padding: 8px 5px;
 }
 
+/* active a {
+  color: #FDFFFC;
+} */
+
 .nav-links:hover{
   color: black;
   background-color: white;
@@ -114,6 +118,11 @@ nav{
 }
 
 /* ___________here_starts_brand_section______________ */
+.brand-header{
+  word-spacing: 5px;
+  font-size: 22px;
+}
+
 .brand-statment{
   max-width: 1100px;
   margin: 30px 50px;
@@ -128,6 +137,19 @@ nav{
 }
 
 /* ___________here_starts_project_page______________ */
+.project-title{
+  font-size: 25px;
+  font-weight: 600;
+  display: block;
+
+  text-align: center;
+  margin: 0px 0 10px;
+}
+
+a{
+  text-decoration: none;
+}
+
 .project-img{
   height: 200px;
   width: 250px;
@@ -147,7 +169,7 @@ nav{
 }
 .project-box{
   width: 700px;
-  height: 250px;
+  height: 280px;
   display: flex;
   margin: 0 auto;
 }
@@ -174,16 +196,23 @@ nav{
 
 .about-statment{
   max-width: 1100px;
-  margin: 150px 40px 0px ;
+  margin: 140px 40px 0px ;
   font-size: 22px;
   font-weight: 200;
   line-height: 28px;
   text-align: center;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   font-family: 'Lora', serif;
   /* color: #7DCFB6; */
   color: rgb(36, 37, 37);
   flex-direction: row;
+}
+
+.about-background{
+  background-color: #f5dce4;
+  display: block;
+  padding: 10px 8px;
+  border-radius: 15px;
 }
 
 .about-heading{
