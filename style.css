@@ -23,6 +23,7 @@ body{
   grid-area: h;
 
   background-image: url("images/background.png");
+  /* background-image: url("images/colorful-background.jpg"); */
   background-size: cover;
   height: 70vh;
 }
@@ -38,7 +39,7 @@ body{
 .projects{
   grid-area: p;
 
-  height: 160vh;
+  height: 220vh;
  }
 
 .about{
@@ -299,7 +300,7 @@ a{
 }
 
 .projects{
-  height: 300vh;
+  height: 430vh;
  }
 
 .about{
@@ -396,7 +397,7 @@ nav{
   height: 35vh;
 }
 .projects{
-  height: 200vh;
+  height: 300vh;
 }
 
 project-title{
